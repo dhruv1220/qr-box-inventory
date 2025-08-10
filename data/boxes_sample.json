@@ -1,0 +1,65 @@
+{
+  "boxes": [
+    {
+      "id": "5de6cfdc67da4c1eb533f0309ce53f97",
+      "name": "Holiday Decor",
+      "location": "Garage – Shelf A2",
+      "items": [
+        {
+          "name": "String lights (warm white)",
+          "qty": 4
+        },
+        {
+          "name": "Ornaments - mixed",
+          "qty": 2
+        },
+        {
+          "name": "Extension cords (6ft)",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "id": "efe1c9d05e5045d79529ac8b7d34022f",
+      "name": "Camping Gear",
+      "location": "Garage – Rack B, Bin 3",
+      "items": [
+        {
+          "name": "Tent (2-person)",
+          "qty": 1
+        },
+        {
+          "name": "Sleeping bag",
+          "qty": 2
+        },
+        {
+          "name": "Camp stove",
+          "qty": 1
+        },
+        {
+          "name": "Propane canisters",
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "id": "85f430dce7534d6e81e1ec7b639a085f",
+      "name": "Documents",
+      "location": "Closet – Top shelf",
+      "items": [
+        {
+          "name": "Tax returns (2019–2023)",
+          "qty": 1
+        },
+        {
+          "name": "Vehicle titles",
+          "qty": 1
+        },
+        {
+          "name": "Passports (old)",
+          "qty": 2
+        }
+      ]
+    }
+  ]
+}
