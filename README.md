@@ -138,7 +138,7 @@ sudo systemctl enable --now avahi-daemon   # enables raspberrypi.local
 
 ```bash
 cd ~
-git clone https://github.com/<you>/qr-box-inventory.git
+git clone https://github.com/dhruv1220/qr-box-inventory.git
 cd qr-box-inventory
 python3 -m venv venv
 source venv/bin/activate
