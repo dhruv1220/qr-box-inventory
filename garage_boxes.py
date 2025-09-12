@@ -267,11 +267,13 @@ def make_qr_square(url: str, scale: int = 4) -> Image.Image:
     return qr.make_image(fill_color="black", back_color="white").convert("L")
 
 def make_label_2x1(name: str, url: str) -> Image.Image:
-    # 384x192 px → 2x1 inches @192 DPI (common thermal label size). Works fine for on-screen too.
     img = Image.new("L", (384, 192), 255)
-    qr = make_qr_square(url, scale=3).resize((160, 160))
-    img.paste(qr, (10, 16))
-    ImageDraw.Draw(img).text((200, 60), name[:22], font=FONT, fill=0)
+    qr_size = 176
+    qr = make_qr_square(url, scale=4).resize((qr_size, qr_size))
+    x = (img.width  - qr_size) // 2
+    y = (img.height - qr_size) // 2
+    img.paste(qr, (x, y))
+    # ImageDraw.Draw(img).text((200, 60), name[:22], font=FONT, fill=0)
     return img
 
 def require_pin(pin: Optional[str]) -> None:
@@ -294,7 +296,7 @@ import re
 def add_box(
     name: str = Form(...),
     location: str = Form(""),
-    items: str = Form(""),                 # NEW
+    items: str = Form(""),                 
     pin: Optional[str] = Form(None)
 ):
     require_pin(pin)
